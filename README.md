@@ -3,7 +3,7 @@
 
 Naive implementation of [Frank Rosenblatt's perceptron](https://en.wikipedia.org/wiki/Perceptron).
 
-[Iris flower data set](https://en.wikipedia.org/wiki/Iris_flower_data_set) is sued as the training data.
+[Iris flower data set](https://en.wikipedia.org/wiki/Iris_flower_data_set) is used as the training data.
 
 The plotted information about Setosa and Versicolor flower's petal and sepal lengths:
 ![1](samples/1_data.png)
