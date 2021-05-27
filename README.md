@@ -7,7 +7,7 @@ Naive implementation of [Frank Rosenblatt's perceptron](https://en.wikipedia.org
 
 The plotted information about Setosa and Versicolor flower's petal and sepal lengths:
 ![1](samples/1_data.png)
-The model is stable after 6 training iterations:
+The model is stable after 2 training iterations:
 ![2](samples/2_perceptron_training.png)
 Illustrated perceptron's decision regions
 ![3](samples/3_perceptron_decision_regions.png)

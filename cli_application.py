@@ -107,9 +107,9 @@ class CliApplication:
             np.arange(x1_min, x1_max, resolution),
             np.arange(x2_min, x2_max, resolution)
         )
-        Z = self._classifier.predict(np.array([xx1.ravel(), xx2.ravel()]).T)
-        Z = Z.reshape(xx1.shape)
-        plt.contourf(xx1, xx2, Z, alpha=0.4, cmap=cmap)
+        classes = self._classifier.predict(np.array([xx1.ravel(), xx2.ravel()]).T)
+        classes = classes.reshape(xx1.shape)
+        plt.contourf(xx1, xx2, classes, alpha=0.4, cmap=cmap)
         plt.xlim(xx1.min(), xx1.max())
         plt.ylim(xx2.min(), xx2.max())
 
@@ -129,7 +129,7 @@ class CliApplication:
         plt.ylabel('petal length in cm')
         plt.legend(loc='upper left')
 
-        plt.savefig('./3_perceptron_decision_refions.png', dpi=300)
+        plt.savefig('./3_perceptron_decision_regions.png', dpi=300)
         if self._show:
             plt.show()
 
